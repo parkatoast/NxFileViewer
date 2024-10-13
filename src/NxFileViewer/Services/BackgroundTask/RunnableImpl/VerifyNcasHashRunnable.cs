@@ -218,8 +218,8 @@ public class VerifyNcasHashRunnable : IVerifyNcasHashRunnable
     {
         private readonly byte[] _key;
         private readonly byte[] _nonce;
-        private byte[] _currentCtr;
-        private IBufferedCipher _cipher;
+        private byte[] _currentCtr = new byte[16];
+        private IBufferedCipher _cipher = new BufferedBlockCipher(new SicBlockCipher(new AesEngine()));
 
         public AESCTR(byte[] key, byte[] nonce, int offset = 0)
         {

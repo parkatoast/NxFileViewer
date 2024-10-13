@@ -268,10 +268,10 @@ public class FileRenamerService : IFileRenamerService
                         case StringOperator.Untouched:
                             break;
                         case StringOperator.ToLower:
-                            partValue = partValue.ToLower();
+                            partValue = partValue?.ToLower();
                             break;
                         case StringOperator.ToUpper:
-                            partValue = partValue.ToUpper();
+                            partValue = partValue?.ToUpper();
                             break;
                         default:
                             throw new ArgumentOutOfRangeException($"Unknown operator «{dynamicText.StringOperator}».");

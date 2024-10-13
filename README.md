@@ -44,7 +44,7 @@ You can decompress those files using [NSZ](https://github.com/nicoboss/nsz/) too
 
 ## Requirements
 
-If application doesn't start, please install the *.NET Desktop Runtime 7* which can be downloaded from the official Microsoft website [here](https://dotnet.microsoft.com/download/dotnet/7.0).
+If application doesn't start, please install the *.NET Desktop Runtime 8* which can be downloaded from the official Microsoft website [here](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ## Contribute
 
